@@ -19,9 +19,15 @@ const treinos = [a, b]
 </script>
 
 <template>
-    <div class="h-100 pt-4">
+    <div class="h-100 pt-2">
+        <div class="d-flex w-100 align-center px-4">
+            <div class="font-weight-black text-h6 text-orange-darken-3">TREINOS CADASTRADOS</div>
+            <v-btn class="ml-auto" append-icon="mdi-plus-thick" variant="text">
+                Criar
+            </v-btn>
+        </div>
 
-        <v-carousel class="h-100">
+        <v-carousel class="mt-2">
             <v-carousel-item v-for="treino in treinos">
                 <v-card variant="elevated" color="grey-darken-3 rounded-lg mx-4 d-flex flex-column"
                     style="min-width: 50vw;">

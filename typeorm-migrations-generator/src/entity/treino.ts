@@ -1,4 +1,4 @@
-import {Entity, PrimaryGeneratedColumn, Column, ManyToMany, JoinTable} from 'typeorm';
+import {Entity, PrimaryGeneratedColumn, Column, OneToMany, JoinTable} from 'typeorm';
 import { Exercicio } from './exercicio'
 
 @Entity('treino')
@@ -7,9 +7,8 @@ export class Treino {
   id: number
 
   @Column('text')
-  name: string
+  nome: string
 
-  @ManyToMany(() => Exercicio)
-  @JoinTable()
+  @OneToMany(() => Exercicio, exercicio => exercicio.treino)
   exercicios: Exercicio[]
 }

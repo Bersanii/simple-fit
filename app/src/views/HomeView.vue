@@ -13,7 +13,7 @@ function redirect(name: string) {
 }
 
 function getColor(name: string) {
-  return route.name?.toString() == name ? 'orange' : 'white'
+  return route.name?.toString() == name ? 'orange-darken-3' : 'white'
 }
 
 onMounted(() => {
@@ -30,17 +30,17 @@ onMounted(() => {
     <v-btn 
       :color="getColor('home')"  
       icon="mdi-home" 
-      variant="plain" 
+      variant="text" 
       @click="redirect('home')"
     />
     <v-btn 
       :color="getColor('add')" 
       icon="mdi-playlist-plus" 
-      variant="plain" 
+      variant="text" 
       @click="redirect('add')" 
     />
     <v-btn 
-      color="orange" 
+      color="orange-darken-3" 
       icon="mdi-play" 
       size="large" 
       variant="outlined"
@@ -49,13 +49,13 @@ onMounted(() => {
     <v-btn 
       :color="getColor('treinos')" 
       icon="mdi-dumbbell" 
-      variant="plain"
+      variant="text"
       @click="redirect('treinos')"
     />
     <v-btn 
       :color="getColor('config')"  
       icon="mdi-cog" 
-      variant="plain" 
+      variant="text" 
       @click="redirect('config')"
     />
   </footer>
