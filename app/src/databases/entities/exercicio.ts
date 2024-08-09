@@ -6,5 +6,5 @@ export class Exercicio {
   id: number
 
   @Column('text')
-  name: string
+  nome: string
 }

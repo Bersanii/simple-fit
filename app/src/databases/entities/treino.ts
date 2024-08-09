@@ -7,7 +7,7 @@ export class Treino {
   id: number
 
   @Column('text')
-  name: string
+  nome: string
 
   @ManyToMany(() => Exercicio)
   @JoinTable()

@@ -22,7 +22,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="d-flex pa-2 bg-grey-darken-4 text-white" :style="{ minHeight: `${contentHeight}px` }">
+  <div class="bg-grey-darken-4 text-white" :style="{ height: `${contentHeight}px`, overflowY: 'auto' }">
     <RouterView />
   </div>
 
