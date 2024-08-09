@@ -24,7 +24,11 @@ const config: CapacitorConfig = {
       electronMacLocation: "/Volumes/Development_Lacie/Development/Databases",
       electronLinuxLocation: "Databases"
     }
-  }
+  },
+  server: {
+    url: "http://192.168.15.11:5173",
+    cleartext: true
+  },
 };
 
 export default config;

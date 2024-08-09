@@ -10,3 +10,10 @@ esbuild: {
 }
 
 precisa estar habilitada, se não o esBuild vai minificar o nome da classe e o typeorm precisa que o nome da classe tenha o timestamp
+
+### configurando o live reload
+
+https://capacitorjs.com/docs/guides/live-reload
+
+
+adicionar --host no npm run dev
