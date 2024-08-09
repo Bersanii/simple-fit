@@ -19,10 +19,10 @@ const dataSourceConfig: DataSourceOptions = {
   synchronize: false,     // !!!You will lose all data in database if set to `true`
   migrationsRun: false  // Required with capacitor type
 };
-export const dataSourceSimpleFit = new DataSource(dataSourceConfig);
-const simplefitDataSource = {
-  dataSource: dataSourceSimpleFit,
-  dbName: dbName
-};
+const dataSourceSimpleFit = new DataSource(dataSourceConfig);
+// const simplefitDataSource = {
+//   dataSource: dataSourceSimpleFit,
+//   dbName: dbName
+// };
 
-export default simplefitDataSource;
+export default dataSourceSimpleFit;
