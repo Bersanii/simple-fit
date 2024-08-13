@@ -13,6 +13,12 @@ export class EspecificacaoExercicio {
   @Column('text')
   grupamento: string
 
+  @Column('text', {nullable: true})
+  instrucoes?: string
+
+  @Column('text', {nullable: true})
+  equipamento?: string
+
   @OneToMany(() => Exercicio, exercicio => exercicio.especificacao)
   exercicios: Exercicio[] 
 }
