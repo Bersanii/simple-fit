@@ -47,10 +47,10 @@ onMounted(() => {
       @click="redirect('play')" 
     />
     <v-btn 
-      :color="getColor('treinos')" 
+      :color="getColor('treino-novo')" 
       icon="mdi-dumbbell" 
       variant="text"
-      @click="redirect('treinos')"
+      @click="redirect('treino-novo')"
     />
     <v-btn 
       :color="getColor('config')"  

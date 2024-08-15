@@ -56,12 +56,6 @@ const initializeDataSources = async () => {
         //     await sqliteParams.connection.saveToStore(mDataSource.dbName);
         // }
     }
-
-    
-    // const repository = simplefitDataSource.dataSource.getRepository(entities.Exercicio)
-    // const exercicio = new entities.Exercicio()
-    // exercicio.name = 'Teste'
-    // repository.save(exercicio)
 }
 
 if (sqliteParams.platform !== "web") {

@@ -9,7 +9,7 @@ const router = createRouter({
       children: [
         // @ts-ignore
         { path: '', name: 'home', component: () => import('../pages/Index.vue') },
-        { path: 'treinos', name: 'treinos', component: () => import('../pages/Treinos.vue') }
+        { path: 'treino/novo', name: 'treino-novo', component: () => import('../pages/NovoTreino.vue') }
       ]
     },
   ]
